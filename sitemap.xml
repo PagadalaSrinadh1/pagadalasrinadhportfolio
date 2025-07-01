@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+  This is an XML sitemap, a file that lists the important pages of a website,
+  making it easier for search engines (like Google, Bing) to crawl and understand
+  the site's structure.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- 
+    The <urlset> tag is the root element and encloses all the URLs.
+    The xmlns attribute specifies the XML namespace for sitemaps.
+  -->
+
+  <url>
+    <!-- 
+      Each <url> entry represents a single page on your website.
+    -->
+
+    <loc>https://srinadhpersonalportfolio.netlify.app/</loc>
+    <!-- 
+      <loc>: The absolute URL of the page. 
+      This should be your ACTUAL live URL where the portfolio is hosted.
+    -->
+
+    <lastmod>2024-05-21</lastmod>
+    <!-- 
+      <lastmod>: The date of the last modification of the page.
+      Format: YYYY-MM-DD.
+      UPDATE THIS DATE whenever you make significant changes to the content of this page.
+      This helps search engines know when to re-crawl the page for new content.
+    -->
+
+    <changefreq>monthly</changefreq>
+    <!-- 
+      <changefreq>: How frequently the page is likely to change.
+      Valid values: always, hourly, daily, weekly, monthly, yearly, never.
+      For a personal portfolio that isn't updated daily, 'monthly' or 'yearly' is often appropriate.
+      If you update projects or skills frequently, 'monthly' is a good choice.
+    -->
+
+    <priority>1.0</priority>
+    <!--
+      <priority>: The priority of this URL relative to other URLs on your site.
+      Valid values range from 0.0 to 1.0.
+      A higher value (like 1.0) indicates higher importance.
+      For a single-page portfolio, the main page is usually the most important, hence 1.0.
+      If you had multiple pages (e.g., /projects, /about), you might set the homepage to 1.0
+      and other important pages to 0.8 or 0.9.
+    -->
+  </url>
+
+  <!-- 
+    If your portfolio had multiple distinct pages (e.g., a separate blog page, a detailed projects page),
+    you would add more <url> entries here for each of them.
+    For a single-page application (SPA) like this portfolio, where content is loaded dynamically
+    but essentially represents one main "document" from a search engine's perspective for this URL,
+    one entry is typically sufficient.
+    If you had distinct, crawlable URLs for different sections (e.g., if #projects was accessible
+    as a separate page like /projects), you'd list those. But since it's a single HTML file
+    with fragment identifiers (#home, #skills), one entry for the base URL is correct.
+  -->
+</urlset>
